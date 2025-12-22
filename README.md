@@ -3,45 +3,12 @@
  <a href="#"><img src="https://img.shields.io/badge/CMake-%23eb2633.svg?style=for-the-badge&logo=cmake&logoColor=white"/></a>
 </p>
 
-# Kai
+# Pikey
 
-A small but nice Discord bot, for our discord server, does mostly small work and personalized commands that the big bots don't support, and a bit of quality of life shit
+A small bot to remind everyone that there slaves
 
 ## Features
 
-- Answers with a cat picture upon "!cat" /ᐠ ˵> ⩊ <˵マ
-- Logs deleted messages with all attachments
-
-# Build/Contributing
-
-## Dependencies
-
-- cmake >=3.3
-- A modern c++ compiler (one that can handle c++ 22)
-- Git
-
-Open the root CMakeLists.txt in a coder editor/IDE that can:
-    
- - Handle cmake presets
- - Supports clang-format 
-
-## Development
-
-### Debug/Testing
-
-1. Create a private discord bot on the discord developer portal
-2. Invite the bot to your private test server
-3. Set the bot token and logging channel id in th main.cpp under the DEBUG_VALUE direktive
-
-For development, select one of the debug profiles and start the cmake, followed by a build.
-
-### Release
-
-- The Bot Token for the main server will be set active in a release cmake preset
-- Rest is the same as in Debug
-- Dont't use this for feature testing
-- 
->[!WARNING]
->Known to have problems with code editors which don't provide a toolchain on windows, e.g vs code, works without issues on linux! I use Arch btw
+- Will kill you
 
 
