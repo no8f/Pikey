@@ -10,5 +10,6 @@ A small bot to remind everyone that there slaves
 ## Features
 
 - Will kill you
+- Will post images of cats when you ask nicely
 
 
