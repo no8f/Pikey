@@ -1,7 +1,8 @@
-#include <Kai/miscellaneous.h>
+#include <Pikey/miscellaneous.h>
 #include <dpp/dpp.h>
+#include <Pikey/daily.h>
 
-void Kai::createCatRepl(dpp::cluster *bot) {
+void Pikey::createMsgListeners(dpp::cluster *bot) {
 	bot->on_message_create([bot](const dpp::message_create_t &event) {
 		if (event.msg.content.find("!cat") != std::string::npos) {
 			bot->request("https://cataas.com/cat", dpp::m_get,
@@ -13,6 +14,8 @@ void Kai::createCatRepl(dpp::cluster *bot) {
 
 							 event.reply(msg, true);
 						 });
+		} else if (event.msg.content.find("!testDaily") != std::string::npos) {
+			Pikey::sendDaily(bot);
 		}
 	});
 }
